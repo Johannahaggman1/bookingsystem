@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import {Link } from "react-router-dom";
 
 
@@ -25,7 +25,7 @@ return (
         <Link to="/form" className={"nav-link"}>| BOKA |</Link>
       </li>
       <li className={"nav-item"}>
-      <Link to="/" className={"nav-link"}> OM OSS  |</Link>
+      <Link to="/about" className={"nav-link"}> OM OSS  |</Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       <li className={"nav-item"}>
