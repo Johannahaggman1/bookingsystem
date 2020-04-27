@@ -127,8 +127,6 @@ body {
     align-items: center;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.774);
-    padding-top: 2rem;
-
 
     .about-info {
         display: flex;
@@ -391,10 +389,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
-    margin: 0 2rem 2rem 2rem;
+    margin: 0 2rem 2rem 1rem;
     background-color: rgba(0, 0, 0, 0.774);
-    padding-top: 1rem;
-    border: solid rgba(255, 255, 255, 0.527) 2px;
+    padding: 0 1rem 0 1rem;
+    
 
 
 
@@ -406,7 +404,8 @@ body {
      border-radius: 5px;
     height: 28rem;
     box-shadow: 0 .12rem .7rem #0000003d;
-    margin: 1rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
+    
     
     .card-image {
         opacity: 0.85;
