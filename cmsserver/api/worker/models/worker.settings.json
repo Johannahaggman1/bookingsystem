@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workers",
+  "info": {
+    "name": "worker"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "workerName": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

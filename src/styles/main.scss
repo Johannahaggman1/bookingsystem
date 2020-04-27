@@ -125,20 +125,47 @@ body {
     .about_wrapper{
         margin-top: 5rem;
         display: flex;
+        flex-direction: row;
         justify-content: flex-end;
+        background-color: rgba(0, 0, 0, 0.671);
+        padding: 2rem;
 
+        .workers_wrapper {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                color: white;
+                font-size: 36px;
+                letter-spacing: 8px;
+                text-shadow: 0 .12rem .5rem #0000003d;;
+            }
+
+        .workers-img_wrapper {
+            display: flex;
+            flex-direction: row;
+            margin-right: 3rem;
+        .worker-img {
+            width: 10rem;
+            height: 10rem;
+            margin: 1rem;
+            border-radius: 8px;
+            background-color: white;
+        }
+    }
+}
         .insta-btn {
             min-height: 15rem;
-            margin-right: 10rem;
+            margin-right: 5rem;
             border: none;
             background-color: none;        
             border-radius: 50%;
             width: 15rem;
-            background-color: rgba(17, 17, 17, 0.808);
-            color: white;
+            background-color: rgba(233, 230, 230, 0.959);
+            color: black;
             font-size: 20px;
             box-shadow: 0 .12rem .5rem #0000003d;
-            opacity: 0.5;
+            opacity: 0.7;
             transition: 0.3s;
             letter-spacing: 6px;
         }
@@ -159,7 +186,7 @@ body {
                 text-shadow: 0 .12rem .5rem #0000003d;
                 box-shadow: 0 .12rem .5rem #0000003d;
             }
-            
+
         .bookings_wrapper {
             min-height: 25rem;
             display: flex;
@@ -229,7 +256,8 @@ body {
         border: none;
         box-shadow: 0 .12rem .5rem #0000003d;
         width: 45rem;
-        background-color: rgb(65, 129, 76);
+        background-color: rgba(13, 44, 13, 0.767);
+        //background-color: rgb(65, 129, 76);
         height: 10rem;
         font-size: 25px;
         letter-spacing: 5px;

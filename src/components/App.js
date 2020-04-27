@@ -38,7 +38,15 @@ render() {
                 <button className={"getCards-btn"} onClick={this.onClickApi.bind(this)}><span>Söker du nya utmaningar? Klicka här!</span></button>
 
             </div>
-            <div className={"about_wrapper"}>
+            <div className={"about_wrapper"}>   
+            <div className={"workers_wrapper"}>
+                <div className={"workers-img_wrapper"}>
+             <div className={"worker-img"}>ska komma</div>   
+             <div className={"worker-img"}>bild på</div>
+             <div className={"worker-img"}>arbetarna sen</div>
+             </div>
+             <p>Vi jobbar här</p>
+             </div>
             <button className={"insta-btn"}>
                 <p>Följ oss på Instagram</p>
                 <i className={"fab fa-instagram fa-3x"}></i>
