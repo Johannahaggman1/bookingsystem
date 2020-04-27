@@ -15,7 +15,8 @@ body {
     background-attachment: fixed;
     
     .nav_wrapper {
-        
+        padding-bottom: 10rem;
+
     .navbar {
         position: fixed;
         z-index: 99;
@@ -24,6 +25,7 @@ body {
         box-shadow: 0 .12rem .5rem #0000003d;
         border-bottom: solid rgba(0, 0, 0, 0.247) 2px;
         background-color: rgb(226, 221, 221);
+        margin-bottom: 5rem;
 
         #nav-logo{
             color: rgb(2, 54, 2);
@@ -378,14 +380,21 @@ body {
       }
 
 .card_wrapper {
-    display: flex;
+/*     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 10rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;*/
 
+    justify-items: center;
+    //padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 2rem 2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.774);
+    padding-top: 1rem;
+    border: solid rgba(255, 255, 255, 0.527) 2px;
 
 
 
