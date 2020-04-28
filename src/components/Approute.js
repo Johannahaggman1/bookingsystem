@@ -7,6 +7,7 @@ import Bookings from "./Bookings";
 import NotFound from "./NotFound";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import Register from "./Register";
 
 const Approute = ()=>{
 
@@ -19,6 +20,7 @@ const Approute = ()=>{
                     <Route path="/" component={App} exact   ></Route>
                     <Route path ="/form" exact component= {Form}></Route>
                     <Route path ="/about" exact component= {About}></Route>
+                    <Route path ="/register" exact component= {Register}></Route>
                     <Route path ="/bookings" exact component= {Bookings}></Route>
                     <Route component= {NotFound} exact></Route>
                     </Switch>

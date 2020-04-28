@@ -33,6 +33,10 @@ return (
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       <li className={"nav-item"}>
+      <Link to="/register" className={"nav-link"}>BLI MEDLEM |</Link>
+        {/* <a className={"nav-link"} href={"#"}></a> */}
+      </li>
+      <li className={"nav-item"}>
       <Link to="/bookings" className={"nav-link"}> MINA BOKNINGAR |</Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
