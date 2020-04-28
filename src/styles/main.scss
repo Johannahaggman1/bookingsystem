@@ -226,18 +226,22 @@ body {
             letter-spacing: 8px;
             padding: .7rem;
             border: solid black 1px;
-            background-color: rgba(255, 255, 255, 0.76);
-            color: black;
+            background-color: white;
+            color: rgb(26, 54, 26);
             text-shadow: 0 .12rem .5rem #0000003d;
+            text-align: center;
         }
 
         p {
             letter-spacing: .5px;
             font-size: 18px;
+            border-radius: 5px;
             padding: 1rem;
-            border: solid black 1px;
-            background-color: rgba(255, 255, 255, 0.76);
-            color: black;
+            //border: solid black 1px;
+            //background-color: white;
+            //color: black;
+            color: white;
+            border: solid white 2px;
         }
 
     }
@@ -483,17 +487,28 @@ body {
 
    
 .card {
-    background-color: rgba(255, 255, 255, 0.89);
-    
+    //background-color: rgba(255, 255, 255, 0.89);
+    background-color: white;
+    border: solid black 2px;
     text-shadow: 0 .12rem .5rem #0000003d;
      border-radius: 5px;
     height: 28rem;
     box-shadow: 0 .12rem .7rem #00000075;
     margin: 2rem 0 2rem 0;
     
+    .card-title {
+        padding: 0.2rem;
+        border: solid black 1px;
+        //border-radius: 5px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.76);
+        color: white;
+        box-shadow: 0 .12rem .7rem #00000075;
+    }
     
     .card-image {
         opacity: 0.85;
+        //box-shadow: 0 .12rem .7rem #00000075;
     }
 
     .card-image:hover {
