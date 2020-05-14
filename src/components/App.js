@@ -1,6 +1,7 @@
 import React , {Component} from "react";
 import Card from "./Card";
 import axios from "axios";
+import About from "./About";
 
 
 class App extends Component  {
@@ -28,6 +29,7 @@ render() {
             {this.state.cards.map((card) =>
                       <Card 
                       key={card.id}
+                      docId={card.id}
                       title={card.title} 
                       price={card.price}
                       description= {card.description}
@@ -35,10 +37,9 @@ render() {
                       />
                 )} 
 
-               
-
             </div>
              <button className={"getCards-btn"} onClick={this.onClickApi.bind(this)}><span>Söker du nya utmaningar? Klicka här!</span></button>
+             <About/>
             <div className={"about-landing_wrapper"}>   
             <div className={"workers_wrapper"}>
                 <div className={"workers-img_wrapper"}>
@@ -54,6 +55,9 @@ render() {
                 </button>
            
             </div> 
+
+            
+
             </div>
         
        

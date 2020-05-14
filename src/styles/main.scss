@@ -28,13 +28,17 @@ body {
         margin-bottom: 5rem;
 
         #nav-logo{
-            color: rgb(2, 54, 2);
-            background-color: white;
+            //color: rgb(2, 54, 2);
+            color: rgb(189, 102, 31);
+            border: solid rgb(2, 54, 2) 2px ;
+            //background-color: white;
+            background-color: rgb(2, 54, 2);
             padding: 0.2rem;
             box-shadow: 0 .12rem .5rem #0000003d;
-            border-radius: 5px;
+            border-radius: 1px;
             text-shadow: 0 .12rem .5rem #0000003d; 
             transition: ease-out 0.2s;
+            
         }
 
         #nav-logo:hover {
@@ -48,6 +52,14 @@ body {
 
        #home-icon:hover {
            font-size: 20px;
+       }
+
+       .login-btn {
+            color: green;
+       }
+
+       .login-btn:hover {
+           color: white;
        }
         
     }
@@ -89,9 +101,16 @@ body {
 
 
         #footer-logo {
-           color: rgb(2, 54, 2);
+           color: rgb(189, 102, 31);
+           //color: rgb(2, 54, 2);
            text-shadow: 0 .12rem .5rem #0000003d;
             transition: ease-out 0.2s;
+            background-color: rgb(26, 54, 26);
+            padding: .5rem;
+            border-radius: 5px;
+            box-shadow: 0 .12rem .5rem #0000003d;
+            text-shadow: 0 .12rem .5rem #0000003d;
+            border: solid black 1px;
         }
  
         #footer-logo:hover {
@@ -120,6 +139,197 @@ body {
     
 }
 
+.admin_wrapper {
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 20rem;
+
+    button {
+        width: 10rem;
+    }
+}
+
+.adminContent_wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.932);
+
+    .cardHeader {
+        font-size: 20px;
+        margin: 0.5rem;
+    }
+
+    .selectCard_wrapper {
+
+        background-color: white;
+        box-shadow: 0 .12rem .5rem #0000003d;
+        margin: 1rem;
+        padding: 1rem;
+
+        .selectCard_content {
+        display: grid;
+        grid-template-columns: auto auto auto auto;  
+
+        .selectCard {
+            border: solid rgb(26, 54, 26) 1.5px;
+            box-shadow: 0 .12rem .5rem #0000003d;
+            background-color: rgba(26, 54, 26, 0.747);
+            color: white;
+            margin: .5rem;
+            border-radius: 3px;
+
+            .card-title {
+                font-size: 18px;
+                letter-spacing: 4px;
+            }
+
+            button {
+                background-color: white;
+                color: rgb(26, 54, 26);
+                border: solid rgb(26, 54, 26) 1px ;
+            }
+
+            button:hover {
+                background-color:rgb(26, 54, 26);
+                color: white;
+                border: solid rgb(26, 54, 26) 1px ;
+            }
+
+        }
+        }
+    }
+    
+
+    .adminHeader_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+
+        button {
+            color: red;
+            border: solid red 1px;
+            background-color: white;
+        }
+        button:hover {
+            background-color: red;
+            border: solid red 1px;
+            color: white;
+        }
+
+    }
+    .adminProfile_wrapper {
+
+        .selectedCard_wrapper {
+            background-color: white;
+            box-shadow: 0 .12rem .5rem #0000003d;
+            float: right;
+            margin: 1rem;
+            padding: 1rem;
+
+            img {
+                height: 25rem;
+                width: 15rem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 30rem;
+            }
+
+            button,  label {
+                width: 10rem;
+                margin: 0.5rem;
+                background-color: rgb(26, 54, 26);
+            }
+
+            input {
+                margin: .5rem;
+            }
+
+            textarea {
+                margin: .5rem;
+            }
+
+            .logout-goback-btn {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+               
+                button {
+                    background-color: white;
+                    border: solid green 1px;
+                    color: green;
+                }
+
+                button:hover {
+                    background-color: green;
+                    color: white;
+                } 
+
+                .del-btn {
+                    background-color: white;
+                    border: solid red 1px;
+                    color: red;
+                }
+
+                .del-btn:hover {
+                    background-color: red;
+                    color: white;
+                }
+            }
+
+        }
+     
+
+        .postNewCard-form {
+            background-color: rgba(255, 255, 255, 0.849);
+            box-shadow: 0 .12rem .5rem #0000003d;
+            display: flex;
+            flex-direction: column;
+            min-height: 15rem;
+            margin: 1rem;
+            padding: 1rem;
+            width: 60%;
+
+            .cardHeader  {
+                font-size: 20px;
+            }
+
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 15rem;
+                    margin: 0.5rem;
+                }
+
+                button {
+                    width: 10rem;
+                    background-color:rgb(26, 54, 26);
+                    color: white;
+                    border: solid rgb(26, 54, 26) 1px ;
+                    margin: .5rem
+                }
+                button:hover {
+                    background-color: white;
+                    color: rgb(26, 54, 26);
+                    border: solid rgb(26, 54, 26) 1px ;
+                }
+
+            }
+        }
+    }
+}
+
 .register_wrapper {
     display: flex;
     height: 40rem;
@@ -144,10 +354,9 @@ body {
             background-color: white;
             padding: 0.2rem;
             box-shadow: 0 .12rem .5rem #0000003d;
-            border-radius: 5px;
+            //border-radius: 5px;
             //border: solid black 1px;
             //background-color: rgba(255, 255, 255, 0.76);
-           
             text-shadow: 0 .12rem .5rem #0000003d;
         }
 
@@ -206,6 +415,81 @@ body {
 
 }
 
+
+//LOGIN STYLE SECTION
+.Login_wrapper {
+
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.774);
+
+    .login_section {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 0 2rem 0 2rem;
+        color: white;
+
+        .login-header {
+            font-size: 27px;
+            letter-spacing: 6px;
+            width: 20rem;
+            text-align: center;
+            color: rgb(2, 54, 2);
+            background-color: white;
+            padding: 0.2rem;
+            box-shadow: 0 .12rem .5rem #0000003d;
+           // border-radius: 5px;
+            //border: solid black 1px;
+            //background-color: rgba(255, 255, 255, 0.76);
+            text-shadow: 0 .12rem .5rem #0000003d;
+        }
+
+        .login-from_wrapper {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                width: 20rem;
+                height: 2.5rem;
+                margin: .5rem;
+                border-radius: 5px;
+            }
+
+            button {
+                width: 10rem;
+                height: 2.5rem;
+                border-radius: 5px;
+                margin: .5rem;
+                border: solid rgb(37, 102, 37) 2px;
+                background-color: white;
+                color: rgb(37, 102, 37);
+            }
+        
+            button:hover {
+                color: white;
+                background-color: rgba(37, 102, 37, 0.733);
+            }
+
+
+        }
+    }
+
+     .login-image {
+        width: 60%;
+        height: 100%;
+        background-image: url("./images/login-image.jpg");
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-left: solid black 1px;
+    }
+}
+
 .about_wrapper {
     display: flex;
     height: 40rem;
@@ -228,6 +512,8 @@ body {
             border: solid black 1px;
             background-color: white;
             color: rgb(26, 54, 26);
+            //color: rgb(189, 102, 31);;
+            //background-color: rgb(26, 54, 26);
             text-shadow: 0 .12rem .5rem #0000003d;
             text-align: center;
         }
@@ -257,19 +543,27 @@ body {
         border-left: solid black 1px;
     }
 
+   
+
+
+
 }
+
+
+
 
 .app_wrapper {    
 
         min-height: 450px; 
 
     .about-landing_wrapper{
-        margin: 5rem 1rem 0 1rem;
+        margin: 5rem 0 0 0;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         background-color: rgba(0, 0, 0, 0.829);
-        padding: 2rem;
+        padding: 2rem 0 2rem 0;
+        margin-bottom: 5rem;
 
         .workers_wrapper {
             display: flex;
@@ -408,6 +702,7 @@ body {
                     margin-top: 2rem;
                     display: flex;
                     justify-content: space-around;
+                
 
                     #btn-cancel{
                         background-color: rgba(255, 0, 0, 0.781);
@@ -421,7 +716,7 @@ body {
     
 
        .getCards-btn {
-        margin-left: 3rem;
+        margin: 0 0 5rem 3rem;
         border-radius: 10px;
         border: none;
         box-shadow: 0 .12rem .5rem #0000003d;

@@ -40,6 +40,10 @@ return (
       <Link to="/bookings" className={"nav-link"}> MINA BOKNINGAR |</Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
+      <li className={"nav-item"}>
+      <Link to="/adminsida" className={"nav-link"}> ADMIN |</Link>
+        {/* <a className={"nav-link"} href={"#"}></a> */}
+      </li>
       {/* <li className={"nav-item dropdown"}>
         <a className={"nav-link dropdown-toggle"} href={"#"} id={"navbarDropdown"} role={"button"} data-toggle={"dropdown"} aria-haspopup={"true"} aria-expanded={"false"}>
           Tjänster
@@ -55,7 +59,7 @@ return (
     </ul>
     <form className={"form-inline my-2 my-lg-0"}>
       {/* <input className={"form-control mr-sm-2"} type={"search"} placeholder={"Sök"} aria-label={"Search"}/> */}
-      <button className={"btn btn-outline-success my-2 my-sm-0"} type={"submit"}>Logga in</button>
+      <button className={"btn btn-outline-success my-2 my-sm-0"} type={"submit"}><Link to="/login" className={"login-btn"}> Logga in</Link></button>
     </form>
   </div>
 </nav>
