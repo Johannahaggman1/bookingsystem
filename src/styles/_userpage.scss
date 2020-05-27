@@ -1,0 +1,113 @@
+.userPage_wrapper {
+
+    //padding-top: 5rem;
+
+    .userLogin_wrapper {
+        padding: 10rem 0 0 5rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: .2rem;
+                margin-top: .5rem;
+                border-radius: 5px;
+            }
+
+            .btn {
+                background-color: white;
+                color: rgb(26, 54, 26);
+                border: solid rgb(26, 54, 26) 1px;
+                width: 10rem;
+                margin: 0.5rem;
+            }
+        }
+
+        h3 {
+            padding-top: 3rem;
+            letter-spacing: 3px;
+        }
+        
+        h2 {
+            letter-spacing: 5px;
+        }
+
+    }
+
+    .userProfile-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10rem 5rem 0 5rem;
+
+    h1 {
+        color: white;
+    }
+
+    .red-btn {
+        background-color: white;
+        border: solid red 1px;
+        color: red;
+        margin: 0 .5rem 0 .5rem;
+    }
+
+    .red-btn:hover {
+        background-color: red;
+        border: solid red 1px;
+        color: white;
+    }
+  }
+
+  .userUpdate_wrapper {
+      display: flex;
+      flex-direction: column;
+      margin: 3rem 0 0 2rem;
+      width: 30rem;
+     
+      background-color: rgba(255, 255, 255, 0.144);
+      padding: 1rem;
+
+      form {
+          display: flex;
+          flex-direction: column;
+
+      input {
+         // margin: 0.5rem;
+          max-width: 15rem;
+      }
+    } 
+
+    h2 {
+          font-size: 16px;
+          color: white;
+      }
+  }
+
+  .btn {
+    background-color: white;
+    color: rgb(26, 54, 26);
+    border: solid rgb(26, 54, 26) 1px;
+    width: 10rem;
+    margin-top: 2rem;
+   
+}
+
+.resetpas-form {
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 1rem;
+    box-shadow: 0 .05rem .2rem white;
+    margin: 5rem 1rem 1rem 1rem;
+    float: right;
+
+    .btn {
+        background-color: rgb(26, 54, 26);
+        color: white;
+    }
+}
+
+}

@@ -1,16 +1,16 @@
 import React, {Component} from "react";
-import firebase from "./FirebaseConfig";
+import firebase from "./../FirebaseConfig";
 
 
 class Card extends Component {
 
     onClickSaveToFirestore() {
 
-       const docRef= firebase.firestore().collection("booking").doc(this.props.docId.toString());
-
-/*        docRef.get()
-       .then( booking =>console.log(booking.data())) */
-
+       const docRef= firebase.firestore().collection("booking").doc(firebase.auth().currentUser.uid.toString())
+       //.collection("bokningar")
+      
+     
+        //ändrase från add till set
        docRef.set({
            name: this.props.title,
            description: this.props.description,

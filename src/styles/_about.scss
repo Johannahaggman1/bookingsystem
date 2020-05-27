@@ -1,0 +1,59 @@
+.about_wrapper {
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.774);
+    padding-top: 5rem;
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 0 2rem 0 2rem;
+        color: white;
+
+        .about-info-header {
+            font-size: 27px;
+            letter-spacing: 8px;
+            padding: .7rem;
+            border: solid black 1px;
+            background-color: white;
+            color: rgb(26, 54, 26);
+            //color: rgb(189, 102, 31);;
+            //background-color: rgb(26, 54, 26);
+            text-shadow: 0 .12rem .5rem #0000003d;
+            text-align: center;
+        }
+
+        p {
+            letter-spacing: .5px;
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 1rem;
+            //border: solid black 1px;
+            //background-color: white;
+            //color: black;
+            color: white;
+            border: solid white 2px;
+        }
+
+    }
+
+    .about-image {
+        width: 60%;
+        height: 100%;
+        background-image: url("./images/boxing-workout.jpg");
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-left: solid black 1px;
+    }
+
+   
+
+
+
+}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import AdminProfile from "./Auth/AdminProfile";
-import AdminLogin from "./Auth/AdminLogin";
+import AdminProfile from "../Auth/AdminProfile";
+import AdminLogin from "../Auth/AdminLogin";
 
 
 

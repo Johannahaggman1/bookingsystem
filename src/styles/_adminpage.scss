@@ -1,0 +1,238 @@
+.admin_wrapper {
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    height: 20rem;
+
+    button {
+        width: 10rem;
+    }
+}
+
+.adminContent_wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    margin-left: 5rem;
+    //background-color: rgba(255, 255, 255, 0.932);
+
+    .loginform_wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        color: white;
+        width: 30%;
+        
+        h3 {
+            padding-top: 3rem;
+            letter-spacing: 3px;
+        }
+        
+        h2 {
+            letter-spacing: 5px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: .2rem;
+                margin-top: .5rem;
+                border-radius: 5px;
+            }
+        }
+
+        .btn {
+            background-color: white;
+            color: rgb(26, 54, 26);
+            border: solid rgb(26, 54, 26) 1px;
+            width: 10rem;
+        }
+
+        }
+
+        .btn {
+            background-color: white;
+            color: rgb(26, 54, 26);
+            border: solid rgb(26, 54, 26) 1px;
+            width: 10rem;
+            margin-top: 2rem;
+           
+        }
+    .cardHeader {
+        font-size: 20px;
+        margin: 0.5rem;
+    }
+
+    .selectCard_wrapper {
+
+        //background-color: white;
+        color: white;
+        box-shadow: 0 .12rem .5rem #0000003d;
+        margin: 1rem;
+        padding: 1rem;
+
+        .selectCard_content {
+        display: grid;
+        grid-template-columns: auto auto auto auto;  
+
+        .selectCard {
+            border: solid rgb(26, 54, 26) 1.5px;
+            box-shadow: 0 .12rem .5rem #0000003d;
+            background-color: rgba(26, 54, 26, 0.747);
+            color: white;
+            margin: .5rem;
+            border-radius: 3px;
+
+            .card-title {
+                font-size: 18px;
+                letter-spacing: 4px;
+            }
+
+            button {
+                background-color: white;
+                color: rgb(26, 54, 26);
+                border: solid rgb(26, 54, 26) 1px ;
+            }
+
+            button:hover {
+                background-color:rgb(26, 54, 26);
+                color: white;
+                border: solid rgb(26, 54, 26) 1px ;
+            }
+
+        }
+        }
+    }
+    
+
+    .adminHeader_content {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        color: white;
+
+        button {
+            color: red;
+            border: solid red 1px;
+            background-color: white;
+        }
+        button:hover {
+            background-color: red;
+            border: solid red 1px;
+            color: white;
+        }
+
+    }
+    .adminProfile_wrapper {
+
+        .selectedCard_wrapper {
+            background-color: white;
+            box-shadow: 0 .12rem .5rem #0000003d;
+            float: right;
+            margin: 1rem;
+            padding: 1rem;
+
+            img {
+                height: 25rem;
+                width: 15rem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 30rem;
+            }
+
+            button,  label {
+                width: 10rem;
+                margin: 0.5rem;
+                background-color: rgb(26, 54, 26);
+            }
+
+            input {
+                margin: .5rem;
+            }
+
+            textarea {
+                margin: .5rem;
+            }
+
+            .logout-goback-btn {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+               
+                button {
+                    background-color: white;
+                    border: solid green 1px;
+                    color: green;
+                }
+
+                button:hover {
+                    background-color: green;
+                    color: white;
+                } 
+
+                .del-btn {
+                    background-color: white;
+                    border: solid red 1px;
+                    color: red;
+                }
+
+                .del-btn:hover {
+                    background-color: red;
+                    color: white;
+                }
+            }
+
+        }
+     
+
+        .postNewCard-form {
+            background-color: rgba(255, 255, 255, 0.849);
+            box-shadow: 0 .12rem .5rem #0000003d;
+            display: flex;
+            flex-direction: column;
+            min-height: 15rem;
+            margin: 1rem;
+            padding: 1rem;
+            width: 60%;
+
+            .cardHeader  {
+                font-size: 20px;
+            }
+
+
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 15rem;
+                    margin: 0.5rem;
+                }
+
+                button {
+                    width: 10rem;
+                    background-color:rgb(26, 54, 26);
+                    color: white;
+                    border: solid rgb(26, 54, 26) 1px ;
+                    margin: .5rem
+                }
+                button:hover {
+                    background-color: white;
+                    color: rgb(26, 54, 26);
+                    border: solid rgb(26, 54, 26) 1px ;
+                }
+
+            }
+        }
+    }
+}

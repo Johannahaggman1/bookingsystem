@@ -16,32 +16,36 @@ return (
 
   <div className={"collapse navbar-collapse"} id={"navbarSupportedContent"}>
     <ul className={"navbar-nav mr-auto"}>
-      <li className={"nav-item active"}>
+      <li className={"nav-item active"} id="nav-homeIcon">
         {/* <a className={"nav-link"} href={"#"}>Hem <span className={"sr-only"}>(current)</span></a> */}
         <Link to="/" className={"nav-link"}><i id={"home-icon"} className={"fas fa-home"}>HEM  </i></Link>
       </li>
       <li className={"nav-item"}>
         {/* <a className={"nav-link"} href={"#"}>| Boka</a> */}
-        <Link to="/form" className={"nav-link"}>| BOKA |</Link>
+        <Link to="/form" className={"nav-link"}> BOKA </Link>
       </li>
       <li className={"nav-item"}>
-      <Link to="/about" className={"nav-link"}> OM OSS  |</Link>
+      <Link to="/about" className={"nav-link"}> OM OSS  </Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       <li className={"nav-item"}>
-      <Link to="/" className={"nav-link"}>UTBUD |</Link>
+      <Link to="/" className={"nav-link"}>UTBUD </Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       <li className={"nav-item"}>
-      <Link to="/register" className={"nav-link"}>BLI MEDLEM |</Link>
+      <Link to="/register" className={"nav-link"}>BLI MEDLEM </Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       <li className={"nav-item"}>
-      <Link to="/bookings" className={"nav-link"}> MINA BOKNINGAR |</Link>
+      <Link to="/contact" className={"nav-link"}> KONTAKTA OSS </Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       <li className={"nav-item"}>
-      <Link to="/adminsida" className={"nav-link"}> ADMIN |</Link>
+      <Link to="/adminsida" className={"nav-link"}> ADMIN </Link>
+        {/* <a className={"nav-link"} href={"#"}></a> */}
+      </li>
+      <li className={"nav-item"}>
+      <Link to="/userpage" className={"nav-link"}> MEDLEM</Link>
         {/* <a className={"nav-link"} href={"#"}></a> */}
       </li>
       {/* <li className={"nav-item dropdown"}>
@@ -57,10 +61,9 @@ return (
       </li> */}
 
     </ul>
-    <form className={"form-inline my-2 my-lg-0"}>
-      {/* <input className={"form-control mr-sm-2"} type={"search"} placeholder={"Sök"} aria-label={"Search"}/> */}
+    
       <button className={"btn btn-outline-success my-2 my-sm-0"} type={"submit"}><Link to="/login" className={"login-btn"}> Logga in</Link></button>
-    </form>
+  
   </div>
 </nav>
 </div>

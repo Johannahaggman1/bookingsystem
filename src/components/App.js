@@ -1,7 +1,7 @@
 import React , {Component} from "react";
-import Card from "./Card";
+import Card from "./pages/Card";
 import axios from "axios";
-import About from "./About";
+import About from "./pages/About";
 
 
 class App extends Component  {

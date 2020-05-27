@@ -78,7 +78,6 @@ class UpdateCards extends Component {
  
     if (!fileInput.disabled) {
       // om man ädrat bilden
-      //NÅTT FEL HÄR UNDER????
  
       const formData = new FormData();
       formData.append("files", this.state.image);

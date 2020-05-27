@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import UpdateCards from "../UpdateCards";
+import UpdateCards from "../pages/UpdateCards";
 
 
 
@@ -48,7 +48,7 @@ class AdminProfile extends Component {
             <div className=" adminContent_wrapper"> 
 
             <div className={"adminHeader_content"}>
-            <h3>{this.props.userData} - Du är nu inloggad som admin </h3>  <button className="btn btn-primary logoutbtn" onClick={this.logOut.bind(this)}> Logga ut</button>  
+            <h3>Välkommen Admin - {this.props.userData}  </h3>  <button className="btn btn-primary logoutbtn" onClick={this.logOut.bind(this)}> Logga ut</button>  
             </div>
             <hr/>
 

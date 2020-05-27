@@ -1,0 +1,84 @@
+.register_wrapper {
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.774);
+
+    .register-section {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding: 0 2rem 0 2rem;
+        color: white;
+
+        .register-input-header {
+            font-size: 27px;
+            letter-spacing: 6px;
+            width: 20rem;
+            text-align: center;
+            color: rgb(2, 54, 2);
+            background-color: white;
+            padding: 0.2rem;
+            box-shadow: 0 .12rem .5rem #0000003d;
+            //border-radius: 5px;
+            //border: solid black 1px;
+            //background-color: rgba(255, 255, 255, 0.76);
+            text-shadow: 0 .12rem .5rem #0000003d;
+        }
+
+        p {
+            letter-spacing: .6px;
+            font-size: 18px;
+            font-weight: lighter;
+            text-shadow: 0 .12rem .5rem #0000003d;
+            padding: 1rem;
+            border: solid white 2px;
+            border-radius: 5px;
+            //background-color: rgba(255, 255, 255, 0.76);
+            color: white;
+        }
+
+        .register-from_wrapper {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                width: 20rem;
+                height: 2.5rem;
+                margin: .5rem;
+                border-radius: 5px;
+            }
+
+            button {
+                width: 10rem;
+                height: 2.5rem;
+                border-radius: 5px;
+                margin: .5rem;
+                border: solid rgb(37, 102, 37) 2px;
+                background-color: white;
+                color: rgb(37, 102, 37);
+            }
+        
+            button:hover {
+                color: white;
+                background-color: rgba(37, 102, 37, 0.733);
+             
+            }
+        }
+
+    }
+
+    .register-image {
+        width: 60%;
+        height: 100%;
+        background-image: url("./images/ma-circut.jpg");
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-left: solid black 1px;
+    }
+
+}

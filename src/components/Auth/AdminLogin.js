@@ -65,17 +65,18 @@ onSubmitLogin(e){
  }
     render(){
         return(
-            <div>
+            <div className="adminContent_wrapper">
              
  
          {this.state.condition  &&
-         <div>
-            <h2>Login</h2>
+         <div className="loginform_wrapper">
+            <h2>Logga in som Admin</h2>
          <form   onSubmit={this.onSubmitLogin.bind(this)}>
                     <input type="email"   name="email"/>
                     <input type="password" name="password" />
-                    <button>Logga in</button>
+                    <button className="btn ">Logga in</button>
                 </form>
+                <h3>Inte medlem än? </h3>
                  </div>
                
                 }
@@ -98,8 +99,8 @@ onSubmitLogin(e){
                 }
  
 {/* <button onClick={this.onClickRegister.bind(this)}>Don't have an account?</button> */}
-<button onClick={this.onClickLogin.bind(this)}>Logga in</button>
-<button onClick={this.onClickRegister.bind(this)}>Registrera</button>
+{/* <button onClick={this.onClickLogin.bind(this)}>Logga in</button> */}
+<button className="btn" onClick={this.onClickRegister.bind(this)}>Registrera dig</button>
                
  
             </div>
